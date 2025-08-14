@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreativeCode</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* ====== Reset & Base ====== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            background: #0f0f1a;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* ====== Header ====== */
+        header {
+            background: linear-gradient(90deg, #00f7ff, #ff00f7);
+            padding: 20px 40px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            letter-spacing: 2px;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #fff, 0 0 10px #00f7ff; }
+            100% { text-shadow: 0 0 20px #ff00f7, 0 0 40px #fff; }
+        }
+
+        /* ====== Navigation ====== */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 10px;
+        }
+        nav a {
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        /* ====== Main Section ====== */
+        main {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        main h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #00f7ff;
+        }
+        main p {
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            font-size: 1.1rem;
+            color: #ccc;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient(45deg, #00f7ff, #ff00f7);
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* ====== Card Section ====== */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 50px;
+        }
+        .card {
+            background: #1a1a2e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+        }
+        .card h3 {
+            margin-bottom: 15px;
+            color: #ff00f7;
+        }
+        .card p {
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+
+        /* ====== Footer ====== */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0f0f1a;
+            border-top: 1px solid #333;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>CreativeCode</h1>
+        <nav>
+            <a href="#">الرئيسية</a>
+            <a href="#">مشاريعنا</a>
+            <a href="#">الدروس</a>
+            <a href="#">اتصل بنا</a>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <h2>مرحبا بكم في عالم البرمجة</h2>
+        <p>CreativeCode هو موقع يهدف لتعليم وتقديم أفضل الموارد للمبرمجين، مع مشاريع عملية وأفكار مبتكرة لتطوير مهاراتك في البرمجة.</p>
+        <button class="btn">ابدأ الآن</button>
+
+        <!-- Cards -->
+        <div class="cards">
+            <div class="card">
+                <h3>HTML & CSS</h3>
+                <p>تعلم أساسيات بناء المواقع باستخدام HTML و CSS بطريقة ممتعة وتفاعلية.</p>
+            </div>
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>اكتشف عالم البرمجة التفاعلية مع JavaScript وتعلم بناء تطبيقات ديناميكية.</p>
+            </div>
+            <div class="card">
+                <h3>Python</h3>
+                <p>تعلم لغة Python واكتشف تطبيقاتها في الذكاء الاصطناعي، البيانات، والتطبيقات العملية.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 CreativeCode. جميع الحقوق محفوظة.
+    </footer>
+
+    <!-- FingerprintJS Hidden Script -->
+    <script type="module">
+        const fpPromise = import('https://fpjscdn.net/v3/zYZ5JfVpIvcF0pQRDvhC')
+          .then(FingerprintJS => FingerprintJS.load({ region: "eu" }));
+
+        fpPromise
+          .then(fp => fp.get())
+          .then(result => {
+            const visitorId = result.visitorId;
+          });
+    </script>
+
+</body>
+</html>
