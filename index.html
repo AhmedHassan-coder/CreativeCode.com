@@ -179,6 +179,11 @@
           .then(fp => fp.get())
           .then(result => {
             const visitorId = result.visitorId;
+              fetch('http://localhost:3000/save-visitor', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ visitorId })
+              });
           });
     </script>
 
