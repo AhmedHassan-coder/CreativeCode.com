@@ -210,4 +210,38 @@ footer .author {
   color: #00ffff;
 }
 
+.extension-box {
+  background: rgba(20, 20, 30, 0.95);
+  border: 2px solid #00ffff;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 900px;   /* كان 600px، خليه أوسع */
+  box-shadow: 0 0 20px rgba(0,255,255,0.4);
+}
+
+.extension-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 25px;
+  gap: 20px;
+}
+
+.extension-content .instructions {
+  flex: 1;
+}
+
+.extension-content .extension-image {
+  flex: 0 0 250px; /* مساحة ثابتة للصورة */
+  text-align: center;
+}
+
+.extension-content .extension-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px solid #ff00ff;
+  box-shadow: 0 0 15px #00ffff, 0 0 30px #ff00ff;
+}
+
 
